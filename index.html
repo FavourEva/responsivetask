@@ -4,9 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive</title>
+    <title>Responsive and media query</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="img/png" size="32x32" href="./images/favicon-32x32.png"/>
+
+    <script src="https://kit.fontawesome.com/8dd4b16ac7.js" crossorigin="anonymous">
+
+    </script>
 </head>
 <body>
-    
+    <main>
+        <div class="des-container">
+
+                    <h2>Learn to code by watching others</h2> 
+                    <p>
+                        see how experienced developers solve problems in real-time, Watching 
+                        scripted tutorials is great, but understanding how developers think is 
+                        invaluable.
+                    </p>
+                </div>
+                <div class="sec-container">
+                <div class="top">
+                   <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+                </div>
+                <div class="form-container">
+                    <form action="" method="post" id="form">
+                       
+                        <input 
+                        type="text"
+                         name="first_name"
+                         id="first_name" 
+                         class="first_name"
+                         placeholder="First Name"
+                         
+                          />
+                          <div class="err" id="first_nameErr">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+
+                            </div>
+                            <small><em>First Name cannot be empty</em></small>
+                          </div>
+
+                    <input 
+                    type="text"
+                     name="last_name"
+                     id="last_name" 
+                     class="last_name"
+                     placeholder="Last Name"
+                    
+                    />
+                    <div class="err" id="last_nameErr">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+
+                        </div>
+                        <small><em>Last Name cannot be empty</em></small>
+                      </div>
+
+               
+                    <input 
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="email"
+                    placeholder="Email Address"
+                    
+                      />
+                      <div class="err" id="emailErr">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+
+                        </div>
+                        <small><em>Looks like this is not an email</em></small>
+                      </div>
+
+        
+                    <input 
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="password"
+                    placeholder="Password"
+                    min-length="6"
+                    />
+                    <div class="err" id="passwordErr">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+
+                        </div>
+                        <small><em>Password cannot be empty</em></small>
+                      </div>
+                      <button type="submit">CLAIM YOUR FREE TRIAL</button>
+                    </form>
+
+                    <span class="footer">
+                        By clicking the button, you are agreeing to our
+                        <strong> <a>Terms and Services</a></strong>
+                    </span>
+                </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
