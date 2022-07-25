@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 *{
     margin:0;
     padding: 0;
@@ -36,17 +36,18 @@
 
         .des-container{
             padding: 30px;
-            padding-top: 100px;
+            padding-top: 5%;
+            margin: auto;
             grid-column: 1;
             grid-row: 1;
         }
 
         .des-container h2{
             font-family: poppins;
-            font-size: 50px;
+            font-size: 43px;
             color: #fff;
             font-weight: 900;
-            line-height: 45px;
+            line-height: 1.2;
             margin-bottom: 25px;
  
         }
@@ -82,36 +83,46 @@
             padding: 30px;
             border-radius: 5px;
             text-align: center;
+            box-shadow: 0 5px rgba(71, 60, 68, 0.281);
+           
          }
 
          form input{
             width: 100%;
-            padding: 1em;
-
+            padding: 0.8em;
             border-radius: 4px;
             border: 1px solid var(--grayish-blue);
-            font-size: 14px;
-            font-weight: 700;
+            font-size: 11px;
+            font-weight: 600;
             font-family: poppins;
-            /* color: var(--grayish-blue); */
+        
+            
+         }
+
+         input{
+            margin-bottom: -30px;
+            margin-top: -30px;
          }
 
          .err{
             visibility: hidden;
          }
 
+         
          .show{
             visibility: visible;
             color: var(--red);
-            padding-right: 20px;
             text-align: right;
             margin-bottom: 15px;
+            margin-top: -30px;
+    
          }
 
          .icon{
             display: block;
             margin-top: -30px;
             margin-bottom: 15px;
+            padding-right: 20px;
          }
 
          input::placeholder{
@@ -145,11 +156,11 @@
             cursor: pointer;
          }
 
-         .form-container footer{
+         .form-container .footer{
             color: var(--grayish-blue);
-            font-size: 0.5em;
+            font-size: 0.6em;
             font-family: poppins;
-            font-weight: 900;
+            font-weight: 400;
          }
 
          .footer strong a{
@@ -158,16 +169,13 @@
         }
 
         @media screen and (max-width: 375px) {
-            * {
-              margin: 0;
-              padding: 0;
-            }
+
             body {
               padding: 0;
               margin: 0;
               padding-top: 40px;
               background-color: var(--red);
-              background-image: url(./images/bg-intro-desktop.png);
+              background-image: url("./bg-intro-mobile.png");
               font-family: "Poppins", sans-serif;
               text-align: center;
               color: white;
@@ -175,6 +183,7 @@
           
             main {
               display: block;
+              width: 90%;
             }
           
             .des-container {
@@ -188,8 +197,9 @@
               font-size: 30px;
               color: white;
               font-weight: 900;
-              line-height: 25px;
+              line-height: 1.2;
               margin-bottom: 25px;
+
             }
           
             .des-container p {
@@ -208,37 +218,43 @@
               background-color: var(--blue);
               padding: 10px;
               border-radius: 5px;
-              box-shadow: 0px 5px hsla(250, 8%, 29%, 0.315);
-              margin-bottom: 2em;
+              box-shadow: 0px 8px rgba(71, 60, 68, 0.281);
+              margin-bottom: 1.5em;
             }
           
             .top p {
-              margin: 0;
+              width: 80%;
+              margin: 0 auto;
               padding: 0;
-              font-size: 15px;
+              font-size: 1.2em;
+              font-weight: 200;
             }
+
             .form-container {
-              background-color: white;
+              background-color: #fff;
               padding: 1.5em;
-              border-radius: 5px;
+              border-radius: 8px;
               text-align: center;
               height: auto;
-              margin-bottom: 2em;
+              box-shadow: 0px 8px rgba(71, 60, 68, 0.281);
+              
             }
           
             form {
               margin: 0px;
-              margin-bottom: 1em;
+              /* margin-bottom: 1em; */
             }
           
-            form input {
-              width: 90%;
-              padding: 1em;
+          .form input {
+              width: 100%;
+              padding: 0.8em 3em 0.8em 3em;
               border-radius: 4px;
               border: 1px solid var(--grayish-blue);
               font-size: 14px;
               font-weight: 700;
-              color: var(--grayish-blue);
+              color: black;
+              margin: auto;
+             
             }
           
             .err {
@@ -250,17 +266,27 @@
               color: var(--red);
               padding-right: 20px;
               text-align: right;
+              margin-top: 5px;
             }
           
+
             .icon {
               display: block;
-              margin-top: -40px;
-              margin-bottom: 20px;
+              margin-top: -30px;
+              margin-bottom: 15px;
+              padding-right: 15px;
+            
             }
+
+            small{
+                padding: 5px;
+                padding-right: 0%;
+            }
+           
           
             input::placeholder {
               font-size: 14px;
-              font-weight: 700;
+              font-weight: 600;
             }
           
             input:focus {
@@ -277,7 +303,7 @@
           
             button {
               width: 100%;
-              padding: 1.5em;
+              padding: 1.3em;
               border-radius: 5px;
               background-color: var(--green);
               color: white;
@@ -289,12 +315,18 @@
               background-color: hsl(154, 70%, 58%);
               cursor: pointer;
             }
+            
           
-            .form-container .footer {
+            .footer {
               color: var(--grayish-blue);
-              font-size: 10px;
-              font-weight: 900;
+              font-size: 4em;
+              font-weight: 400;
+              margin-top: 0;
+              
             }
+
+            
+
             .footer strong a {
               color: var(--red);
             }
